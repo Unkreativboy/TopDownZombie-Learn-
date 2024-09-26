@@ -27,6 +27,7 @@ public class Movement : MonoBehaviour
     {
         Vector2 moveInput =  GameInput.Instance.GetMovementVector();
         characterController.SimpleMove(new Vector3(moveInput.x,0,moveInput.y)*movementSpeed);
+        
     }
 
 
