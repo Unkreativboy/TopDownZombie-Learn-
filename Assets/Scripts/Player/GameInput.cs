@@ -5,11 +5,13 @@ using UnityEngine;
 public class GameInput : MonoBehaviour
 {
 
+    public static GameInput Instance { get; private set; }
+
     private PlayerInput playerInput;
-
-
     private void Awake()
     {
+        Instance = this;
+
         playerInput = new PlayerInput();
         playerInput.Player.Enable();
 
