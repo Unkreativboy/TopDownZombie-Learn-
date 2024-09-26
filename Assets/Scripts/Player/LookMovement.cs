@@ -25,7 +25,6 @@ public class LookMovement : MonoBehaviour
             Vector2 mouseDirection = new Vector2(transform.position.x, transform.position.z) - new Vector2(hitData.point.x, hitData.point.z);
             float degrees = Mathf.Atan2(mouseDirection.y, mouseDirection.x)*Mathf.Rad2Deg+90f;
             Debug.Log(degrees);
-
             transform.eulerAngles = new Vector3(0, -degrees, 0);
 
         }
