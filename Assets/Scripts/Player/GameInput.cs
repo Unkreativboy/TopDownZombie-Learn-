@@ -23,6 +23,11 @@ public class GameInput : MonoBehaviour
         return playerInput.Player.Move.ReadValue<Vector2>();
     }
 
+    public Vector2 GetMousePosition()
+    {
+        return playerInput.Player.Look.ReadValue<Vector2>();
+    }
+
 
 
 }
